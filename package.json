@@ -1,28 +1,41 @@
 {
-  "name": "itvdn-landing",
+  "name": "landing",
   "version": "1.0.0",
-  "description": "This is langing tutorial for ITVDN students",
+  "description": "sass,pug",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "glob": "^7.1.2",
+    "normalize.scss": "^0.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sergeyamator/itvdn-landing.git"
-  },
-  "author": "Sergey Rubets",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sergeyamator/itvdn-landing/issues"
-  },
-  "homepage": "https://github.com/sergeyamator/itvdn-landing#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.18.13",
     "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp.spritesmith": "^6.3.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp.spritesmith": "^6.5.1",
     "rimraf": "^2.6.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seleznevaksenia/Landing.git"
+  },
+  "keywords": [
+    "landing",
+    "pug",
+    "sass"
+  ],
+  "author": "Ksenia Selezneva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seleznevaksenia/Landing/issues"
+  },
+  "homepage": "https://github.com/seleznevaksenia/Landing#readme"
 }
