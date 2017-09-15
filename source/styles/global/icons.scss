@@ -1,0 +1,14 @@
+.icon{
+  margin: auto auto 23px auto;
+}
+.icon-like{
+  @include sprite($good);
+}
+
+.icon-book{
+  @include sprite($book);
+}
+
+.icon-message{
+  @include sprite($ads);
+}

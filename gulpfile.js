@@ -41,13 +41,13 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('build/css'));
 });
 gulp.task('sprite', function (cb) {
-    var spriteData = gulp.src('images/*.png').pipe(sprite({
+    var spriteData = gulp.src('source/images/icons/*.png').pipe(sprite({
         imgName: 'sprite.png',
         imgPath:'../images/sprite.png',
         cssName: 'sprite.scss'
     }));
-    spriteData.pipe(gulp.dest('built/images'));
-    spriteData.pipe(gulp.dest('source/style/global/'));
+    spriteData.img.pipe(gulp.dest('build/images'));
+    spriteData.css.pipe(gulp.dest('source/styles/global/'));
     cb();
 });
 
