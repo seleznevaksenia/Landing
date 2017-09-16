@@ -2,4 +2,49 @@
   padding: 110px 0;
   background-color: #de2b24;
   color:#fff;
+
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+  }
+  .title--with-bottom-line{
+    &:after{
+      background: #fff;
+    }
+  }
+  &__item{
+    width: 256px;
+    height: 256px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #f35e59;
+
+    &--name{
+      position:relative;
+      padding: 130px 40px 75px 40px;
+      text-align: center;
+
+      &:before{
+        @include sprite($mouse);
+        @include centerer-x;
+
+        content: '';
+        top: 74px;
+      }
+    }
+  }
+  &__name{
+    font-size: 1.625rem;
+  }
+
+  &__picture{
+    width: 100%;
+    height: 100%;
+  }
+  &__description{
+    font-size: 1rem;
+  }
 }
