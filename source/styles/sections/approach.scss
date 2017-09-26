@@ -2,6 +2,12 @@
   padding: 86px 0 94px;
   background-color: #f3f3f3;
 
+  @media(max-width: 985px){
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+
   &__list{
     counter-reset: count;
     padding: 0;
@@ -13,20 +19,24 @@
     box-shadow: -1px -1px 10px 1px rgba(214,214,214,1);
     color:#424242;
     background: #fff;
+    @media(max-width: 985px){
+      padding:25px 28px;
+    }
 
     &:nth-child(2n){
       display: flex;
       flex-direction: row-reverse;
       text-align: right;
 
-      .approach__text{
-        padding: 78px 90px;
-      }
       .approach__step{
         right: auto;
         left: -52px;
       }
+      @media(max-width: 700px){
+        display: block;
+      }
     }
+
   }
   &__picture{
     display: block;
@@ -39,6 +49,14 @@
     max-height: 236px;
     display: inline-block;
     vertical-align: top;
+    @media (max-width: 985px) {
+      max-width: calc(340px/1.5);
+      max-height: calc(236px/1.5);
+    }
+    @media (max-width: 700px) {
+      display: block;
+      margin: auto;
+    }
   }
   &__text{
     display: inline-block;
@@ -46,6 +64,13 @@
     width: 64%;
     padding: 70px 78px 55px 98px;
     font-size: 0.875rem;
+    @media(max-width: 985px){
+      padding:25px 28px;
+    }
+    @media(max-width: 700px){
+      width:100%;
+      text-align: center;
+    }
   }
   &__step{
     @include centerer-y();
@@ -68,6 +93,9 @@
       font-size: 3rem;
       line-height: 1;
       color: #fff;
+    }
+    @media(max-width: 985px){
+      display:none;
     }
 
   }

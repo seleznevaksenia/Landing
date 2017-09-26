@@ -1,7 +1,7 @@
-nav.-nav
-    -var items = [{name:"Home",href:"#"},{name:"About Us",href:"#"},{name:"Our Approch",href:"#"},{name:"Our Work",href:"#"}]
+nav.nav
+    -var items = [{name:"Home",href:"#",dataItems:'header'},{name:"About Us",href:"#",dataItems:'about'},{name:"Our Approch",href:"#",dataItems:'approach'},{name:"Our Work",href:"#",dataItems:'work'}]
     each item in items
         if item.name === "Home"
-            a.nav__link.nav__link--active(href=item.href)=item.name
+            a.nav__link.nav__link--active(href=item.href data-link =item.dataItems)=item.name
         else
-            a.nav__link(href=item.href)=item.name
+            a.nav__link(href=item.href data-link =item.dataItems)=item.name

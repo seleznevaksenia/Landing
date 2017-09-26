@@ -11,7 +11,7 @@
     color: #cecece;;
   }
   &__title{
-    margin-bottom: 20px;
+    margin-bottom: 33px;
     font-size: 1.8125rem;
     color: #ffffff;
     font-family: $ff-main-bold;
@@ -30,7 +30,7 @@
     }
   }
   &__links{
-    margin-bottom: 35px;
+    margin-bottom: 53px;
     color: #ffffff;
 
     .fa{
@@ -53,14 +53,14 @@
     color: #cecece;
     background: #515151;
     border:0;
-    font-family: $ff-main-light;
+    font-family: $ff-main-bold;
   }
   .button{
     border:2px solid #515151;
     padding: 15px 37px;
     box-sizing: border-box;
     font-size: 1.06245rem;
-    font-family: $ff-main-light;
+    font-family: $ff-main-bold;
     background-color: initial;
     color:#ffffff;
 

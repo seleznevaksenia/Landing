@@ -2,6 +2,12 @@
   padding: 110px 0;
   background-color: #de2b24;
   color:#fff;
+  @media(max-width: 985px){
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
 
   &__list{

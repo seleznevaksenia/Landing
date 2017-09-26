@@ -1,7 +1,7 @@
 section.form-section
     .container
         .title
-            h2.title.title__header Get Your Free Facebook Analysis Now
+            h2.title__header Get Your Free Facebook Analysis Now
             .title__text Enter your details below
         .btn-down: a.arrow-down: i.fa.fa-angle-down
 
@@ -12,8 +12,8 @@ section.form-section
                     Sit down with our experts to receive a free customized marketing
                      plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
                 .form__fields
-                    input.form__input(type="text" placeholder="Your name")
-                    input.form__input(type="text" placeholder="Contact Number")
-                    input.form__input(type="text" placeholder="Contact name")
+                    input.form__input(type="text" placeholder="Your name" data-valid="required")
+                    input.form__input(type="text" placeholder="Contact Number" data-valid="required" data-number)
+                    input.form__input(type="email" placeholder="Email" data-valid="required" data-email)
 
                 button(type="submit").button.button-uppercase.button--red Submit now
