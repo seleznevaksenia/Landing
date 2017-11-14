@@ -32,11 +32,9 @@
       position:relative;
       padding: 130px 40px 75px 40px;
       text-align: center;
-
+      cursor:url(./../../images/icons/mouse.png), auto;;
       &:before{
-        @include sprite($mouse);
         @include centerer-x;
-
         content: '';
         top: 74px;
       }
@@ -52,5 +50,14 @@
   }
   &__description{
     font-size: 1rem;
+  }
+  &__large__picture{
+  height: 120%;
+  width: 120%;
+  margin: -10% 0 0 -10%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  &__zindex{
+    z-index: 2
   }
 }

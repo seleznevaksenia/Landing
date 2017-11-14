@@ -3,9 +3,12 @@
   padding: 174px 0;
   text-align: center;
   color:#fff;
-  background: #ccc url("../../images/Picture.jpg") center/cover no-repeat;
+  background: #ccc url("../../images/Picture.jpg") fixed center/cover no-repeat;
   @media(max-width: 360px){
     min-height: 400px;
+  }
+  @media only screen and (max-device-width: 1024px) {
+      background-attachment: scroll;
   }
 
   &__about{

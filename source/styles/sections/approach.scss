@@ -19,8 +19,13 @@
     box-shadow: -1px -1px 10px 1px rgba(214,214,214,1);
     color:#424242;
     background: #fff;
+    transition: all 0.4s ease;
     @media(max-width: 985px){
       padding:25px 28px;
+    }
+    &:hover{
+      box-shadow: 0 40px 40px rgba(0,0,0,.16);
+      transform: translate(0,-8px);
     }
 
     &:nth-child(2n){

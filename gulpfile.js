@@ -64,18 +64,23 @@ gulp.task('copy:images', function () {
     return gulp.src('source/images/**/*.*')
         .pipe(gulp.dest('build/images'))
 });
-gulp.task('copy',gulp.parallel('copy:fonts','copy:images'));
+gulp.task('copy:lib', function () {
+    return gulp.src('source/lib/**/*.*')
+        .pipe(gulp.dest('build/lib'))
+});
+gulp.task('copy',gulp.parallel('copy:fonts','copy:images','copy:lib'));
 gulp.task('js',function () {
     return gulp.src([
         'source/js/init.js',
         'source/js/navigation.js',
         'source/js/validation.js',
         'source/js/form.js',
-        'source/js/main.js'
+        'source/js/main.js',
+        'source/js/work.js'
     ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
-       /* .pipe(uglify())*/
+         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build/js/'));
 
@@ -86,7 +91,7 @@ gulp.task('watch',function () {
     gulp.watch('source/styles/**/*.scss',gulp.series('sass'));
     gulp.watch('source/js/**/*.js',gulp.series('js'));
 });
-
+//gulp.series - sequential execution, gulp.parallel - parallel execution
 gulp.task('default',gulp.series(
     'clean',
     gulp.parallel('templates:compile','js','sass','sprite','copy'),

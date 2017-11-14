@@ -1,6 +1,14 @@
+$(document).ready(function () {
+    $('.btn-down').click(function () {
+        $('.form-container').slideToggle("slow");
+    });
+    $('.form__close-button').click(function () {
+        $('.form-container').hide("slow");
+    });
+});
 (function () {
     var me ={};
-    var form = document.querySelector('.form-container');
+    /*var form = document.querySelector('.form-container');
     var closeButton = null;
     function onClose() {
         me.close();
@@ -13,7 +21,7 @@
     };
     me.close = function () {
         form.classList.add('is-hidden');
-    };
+    };*/
     me.isValid = function () {
         var requiredFields = document.querySelectorAll('[data-valid="required"]');
         var emailValue = document.querySelector('[data-email]').value;

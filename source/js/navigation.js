@@ -18,13 +18,13 @@
         var coords = section.getBoundingClientRect();
 
         var timerId = setInterval(function () {
-            if (document.body.scrollTop < coords.top){
-                window.scrollBy(0,15);
+            if (document.documentElement.scrollTop< coords.top){
+                window.scrollBy(0,10);
             }
             else{
                 clearInterval(timerId);
             }
-        },0.5)
+        },1)
     }
 
 
