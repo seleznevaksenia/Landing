@@ -1,6 +1,6 @@
 .work{
   padding: 110px 0;
-  background-color: #de2b24;
+  background: linear-gradient(#c0c0c0 , #de2b24 95%);
   color:#fff;
   @media(max-width: 985px){
     padding-top:20px;
@@ -52,9 +52,9 @@
     font-size: 1rem;
   }
   &__large__picture{
-  height: 120%;
-  width: 120%;
-  margin: -10% 0 0 -10%;
+  height: 140%;
+  width: 140%;
+  margin: -20% 0 0 -20%;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
   &__zindex{
