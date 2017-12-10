@@ -3,11 +3,7 @@
         // var openFormButton = document.querySelector('.btn-down');
          var form = document.querySelector('.form');
         var nav = document.querySelector('.nav');
-        // if (openFormButton) {
-        //     openFormButton.addEventListener('click', function () {
-        //         ITVDN.form.open();
-        //     });
-        // }
+
         if(form){
             form.addEventListener('submit',function (e) {
                 e.preventDefault();

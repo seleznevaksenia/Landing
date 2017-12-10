@@ -9,6 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
 
 // Static server
 gulp.task('server', function() {
@@ -62,6 +63,7 @@ gulp.task('copy:fonts', function () {
 });
 gulp.task('copy:images', function () {
     return gulp.src('source/images/**/*.*')
+        .pipe(imagemin())
         .pipe(gulp.dest('build/images'))
 });
 gulp.task('copy:lib', function () {
@@ -75,8 +77,7 @@ gulp.task('js',function () {
         'source/js/navigation.js',
         'source/js/validation.js',
         'source/js/form.js',
-        'source/js/main.js',
-        'source/js/work.js'
+        'source/js/main.js'
     ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
