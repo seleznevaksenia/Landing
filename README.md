@@ -24,4 +24,4 @@
 packege.json, а также все их зависимости
 
 ## DEMO проекта:
-> mylanding.zzz.com.ua
+>  http://mylanding.zzz.com.ua
